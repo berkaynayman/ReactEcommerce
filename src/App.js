@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import WithSubnavigation from "./Components/Navbar";
 import { MainContext } from "./context";
 import Login from "./Page/Login";
+import Signup from "./Page/Signup";
 import { Container } from '@chakra-ui/react'
 
 const USERS = [
@@ -25,6 +26,7 @@ function App() {
         <WithSubnavigation />
           <Routes>
               <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
           </Routes>
         </BrowserRouter>
       </Container>
