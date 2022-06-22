@@ -8,6 +8,8 @@ Stack, Text, useBreakpointValue, useColorModeValue,
 
 import { OAuthButtonGroup } from './OAuthButtonGroup'
 
+import LabelInput from '../Form/LabelInput'
+
 function LoginForm() {
   return (
     <Container maxW="lg" py={{ base: '12', md: '24' }} px={{ base: '0', sm: '8' }} >
@@ -65,10 +67,8 @@ function LoginForm() {
                         spacing="5"
                     >
                         <FormControl>
-                            <FormLabel htmlFor="email">Email</FormLabel>
-                            <Input id="email" type="email" placeholder='Email' />
-                            <FormLabel mt={'3'} htmlFor="password">Password</FormLabel>
-                            <Input id="password" type="password" placeholder='Password' />
+                            <LabelInput Id={'email'} Type={'email'} Placeholder={'Email'} />
+                            <LabelInput Id={'password'} Type={'password'} Placeholder={'Password'} />
                         </FormControl>
                     </Stack>
                     <HStack 

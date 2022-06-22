@@ -78,19 +78,23 @@ import { MainContext, useContext } from '../../context';
                   Log In
                 </Button>
               </Link>
-            <Button
-              display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'sm'}
-              fontWeight={600}
-              color={'white'}
-              bg={'pink.400'}
-              href={'#'}
-              _hover={{
-                bg: 'pink.500',
-              }}
-            >
-              Sign Up
-            </Button>
+              <Link
+                to='signup'
+              >
+                <Button
+                  display={{ base: 'none', md: 'inline-flex' }}
+                  fontSize={'sm'}
+                  fontWeight={600}
+                  color={'white'}
+                  bg={'pink.400'}
+                  href={'#'}
+                  _hover={{
+                    bg: 'pink.500',
+                  }}
+                >
+                  Sign Up
+                </Button>
+              </Link>
           </Stack>
         </Flex>
   
